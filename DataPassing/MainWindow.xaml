@@ -1,0 +1,24 @@
+﻿<Window x:Class="DataPassing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataPassing"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="170.973" Width="353.082" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Name="BtnOpenWindow"
+                Margin="119,10,121,0" Height="28"
+                Content="OPEN" Click="BtnOpenWindow_Click"/>
+        <Label Grid.Row="1" Name="LblDisplay" Background="Red"
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+               TextElement.FontFamily="Roboto" TextElement.FontSize="16"
+               Margin="10,14,10,39" BorderBrush="Black" BorderThickness="1" Content=""/>
+        <Label Content="You are:" HorizontalAlignment="Left" Margin="10,25,0,0" Grid.Row="1" VerticalAlignment="Top" Width="55"/>
+    </Grid>
+</Window>
